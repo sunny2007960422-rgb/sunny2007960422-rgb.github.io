@@ -3,56 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首頁</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <title>唐詩三百首</title>
     <style>
         body {
+            font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            font-family: 'Noto Sans TC', sans-serif;
-            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            background: #f4f4f4;
         }
-        .container {
-            background: rgba(255,255,255,0.85);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            border-radius: 20px;
-            padding: 40px 60px;
+        header {
+            background: #0078d7;
+            color: #fff;
+            padding: 1rem 2rem;
+        }
+        nav {
+            margin-top: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-weight: bold;
+        }
+        main {
+            background: #fff;
+            margin: 2rem auto;
+            padding: 2rem;
+            max-width: 800px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-radius: 8px;
+        }
+        footer {
             text-align: center;
-        }
-        h1 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            color: #2d3a4b;
-            margin-bottom: 20px;
-            letter-spacing: 2px;
-        }
-        p {
-            font-size: 1.3rem;
-            color: #4b5d6e;
-            margin-bottom: 0;
-        }
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px 10px;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-            p {
-                font-size: 1rem;
-            }
+            color: #888;
+            padding: 1rem;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>歡迎來到首頁</h1>
-        <p>這是您的高級設計感首頁，展現現代美學與簡約風格。</p>
-    </div>
+    <header>
+        <h1>唐詩三百首
+        </h1>
+    
+        <nav>
+            <a href="#home">首頁</a>
+            <a href="#about">關於</a>
+            <a href="#contact">聯絡</a>
+        </nav>
+    </header>
+    <main>
+    
+         相思子 <br>
+        紅豆生南國，春來發幾枝。<br>
+        怨君多採擷，此物最相思。
+        <br><br>
+        送別<br>
+        山中相送罷，日暮掩柴扉。<br>
+        明年春草綠，王孫歸不歸？
+        <table border="1">
+            <tr>
+                <td> 相思子 <br>
+        紅豆生南國，春來發幾枝。<br>
+        怨君多採擷，此物最相思</td>
+                <td><img src="pic1.jpg" alt=""><br>
+        <br><br>
+            <tr>
+                <td> 送別 <br>
+        山中相送罷，日暮掩柴扉。<br>
+        明年春草綠，王孫歸不歸？</td>
+                <td><img src="pic2.jpg" alt=""><br>
+        <br><br>
+
+
+       
+            </tr>
+        </table>
+    </main>
+    <footer>
+
+        &copy; 2025 我的基本網站
+    </footer>
 </body>
 </html>
