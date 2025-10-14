@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>我的第一個網頁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; background: #f0f8ff; margin: 0; padding: 0; }
+        header { background: #4682b4; color: #fff; padding: 20px; text-align: center; }
+        main { padding: 30px; }
+        footer { background: #eee; color: #333; text-align: center; padding: 10px; position: fixed; width: 100%; bottom: 0; }
+        .container { max-width: 800px; margin: auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>歡迎來到我的網頁</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>關於我</h2>
+            <p>這是一個簡單的 HTML 範例頁面。你可以在這裡放置任何你想分享的內容。</p>
+            <ul>
+                <li>學習 HTML、CSS</li>
+                <li>製作個人網站</li>
+                <li>分享作品與想法</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 我的網站
+    </footer>
+</body>
+</html>

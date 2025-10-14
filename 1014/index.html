@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>SUNSUN 名片</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+            font-family: 'Segoe UI', '微軟正黑體', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .card-container {
+            max-width: 600px;
+            margin: 60px auto;
+            background: #fff;
+            box-shadow: 0 8px 32px rgba(60, 60, 120, 0.15);
+            border-radius: 24px;
+            display: flex;
+            overflow: hidden;
+        }
+        .card-left {
+            background: linear-gradient(135deg, #6366f1 60%, #818cf8 100%);
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 0;
+        }
+        .avatar {
+            width: 140px;
+            height: 140px;
+            overflow: visible;
+            border: none;
+            box-shadow: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .avatar img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            clip-path: polygon(
+                25% 6.7%, 75% 6.7%,
+                100% 50%, 75% 93.3%,
+                25% 93.3%, 0% 50%
+            );
+        }
+        .card-right {
+            width: 60%;
+            padding: 32px 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .name {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #6366f1;
+            margin-bottom: 12px;
+            letter-spacing: 2px;
+        }
+        .info {
+            font-size: 1.1rem;
+            color: #374151;
+            margin-bottom: 8px;
+        }
+        .label {
+            font-weight: 500;
+            color: #818cf8;
+            margin-right: 8px;
+        }
+        @media (max-width: 600px) {
+            .card-container {
+                flex-direction: column;
+                max-width: 95vw;
+            }
+            .card-left, .card-right {
+                width: 100%;
+                padding: 24px 0;
+            }
+            .card-right {
+                padding: 24px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card-left">
+            <div class="avatar">
+                <img src="001.jpg" alt="SUNSUN 大頭照">
+            </div>
+        </div>
+        <div class="card-right">
+            <div class="name">SUNSUN</div>
+            <div class="info"><span class="label">職業：</span>學生</div>
+            <div class="info"><span class="label">學校：</span>XX大學</div>
+            <div class="info"><span class="label">科系：</span>資訊工程系</div>
+            <div class="info"><span class="label">電話：</span>0912-345-678</div>
+            <div class="info"><span class="label">Email：</span>sunsun@email.com</div>
+            <div class="info"><span class="label">興趣：</span>攝影、設計、程式</div>
+        </div>
+    </div>
+</body>
+</html>
