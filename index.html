@@ -1,232 +1,102 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>唐詩三百首</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 0;
-            background: #f4f4f4;
-        }
-        header {
-            background: #0078d7;
-            color: #fff;
-            padding: 1rem 2rem;
-        }
-        nav {
-            margin-top: 0.5rem;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-right: 1.5rem;
-            font-weight: bold;
-        }
-        main {
-            background: #fff;
-            margin: 2rem auto;
-            padding: 2rem;
-            max-width: 800px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            border-radius: 8px;
-        }
-        footer {
-            text-align: center;
-            color: #888;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>唐詩三百首
-        </h1>
-    
-        <nav>
-            <a href="#home">首頁</a>
-            <a href="#about">關於</a>
-            <a href="#contact">聯絡</a>
-        </nav>
-    </header>
-    <main>
-    
-         相思子 <br>
-        紅豆生南國，春來發幾枝。<br>
-        怨君多採擷，此物最相思。
-        <br><br>
-        送別<br>
-        山中相送罷，日暮掩柴扉。<br>
-        明年春草綠，王孫歸不歸？
-        <table border="1">
-            <tr>
-                <td> 相思子 <br>
-        紅豆生南國，春來發幾枝。<br>
-        怨君多採擷，此物最相思</td>
-                <td><img src="pic1.jpg" alt=""><br>
-        <br><br>
-            <
-                <td> 送別 <br>
-        山中相送罷，日暮掩柴扉。<br>
-        明年春草綠，王孫歸不歸？</td>
-                <td><img src="pic2.jpg" alt=""><br>
-        <br><br>
-
-
-       
-            </tr>
-        </table>
-    </main>
-    <footer>
-
-        &copy; 2025 我的基本網站
-    </footer>
-</body>
-<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>表格 × 圖片練習</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      margin: 0;
-      background: #f4f4f4;
-    }
-    .table-wrap {
-      overflow-x: auto;
-      margin: 2rem auto;
-      max-width: 900px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      padding: 2rem;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 600px;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 1rem;
-      text-align: left;
-      vertical-align: top;
-    }
-    th {
-      background: #0078d7;
-      color: #fff;
-    }
-    .caption {
-      font-size: 0.95em;
-      color: #666;
-      margin-top: 0.5em;
-    }
-    .footer {
-      text-align: center;
-      color: #888;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    .note {
-      max-width: 900px;
-      margin: 2rem auto 0 auto;
-      background: #eaf6ff;
-      border-left: 4px solid #0078d7;
-      padding: 1rem 2rem;
-      border-radius: 6px;
-      color: #333;
-    }
-    .code {
-      background: #f0f0f0;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-family: 'Consolas', 'Menlo', monospace;
-      font-size: 0.95em;
-    }
-    @media (max-width: 600px) {
-      .table-wrap {
-        padding: 0.5rem;
-      }
-      th, td {
-        padding: 0.5rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <h1>表格 × 圖片練習</h1>
-  <p class="subtitle">目標：熟悉 <span class="code">&lt;table&gt;</span>、合併儲存格（colspan/rowspan）、替代文字（alt）、圖片大小與標題對齊。</p>
-
-  <div class="note">
-    <strong>任務說明：</strong>請把下方「旅行相片一覽」做成一個整齊的圖文表格。<br>
-    1) 每張圖片下方要有標題（地點＋主題）；2) 第一列放分類標籤；3) 用 <span class="code">colspan</span> 或 <span class="code">rowspan</span> 做出至少一次的合併；4) 為每張圖片寫合適的 <span class="code">alt</span>；5) 讓表格在手機上也能水平滾動查看。
-  </div>
-
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th>分類</th>
-          <th>縮圖</th>
-          <th>標題與描述</th>
-          <th>拍攝日期</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td rowspan="2">城市風景</td>
-          <td>
-            <img src="picture3.jpg" alt="傍晚的河岸與城市天際線倒影" width="480">
-            <div class="caption">建議寬度 480px</div>
-          </td>
-          <td><strong>河畔夕照</strong><br>金色陽光灑在河面，倒映城市天際線。</td>
-          <td>2025-09-01</td>
-        </tr>
-        <tr>
-          <td>
-            <img src="picture5.jpg" alt="夜晚燈光點綴的街道與咖啡店" width="480">
-            <div class="caption">圖片下方加入 1~2 句描述。</div>
-          </td>
-          <td><strong>夜色小徑</strong><br>街角咖啡店透出溫暖光暈。</td>
-          <td>2025-09-02</td>
-        </tr>
-        <tr>
-          <td colspan="4"><strong>海邊旅行</strong>（小節標題，使用 <span class="code">colspan="4"</span> 合併）</td>
-        </tr>
-        <tr>
-          <td>自然風景</td>
-          <td>
-            <img src="picture4.jpg" alt="沙灘、海浪與遠方的帆船" width="480">
-            <div class="caption">替代文字（alt）說明畫面重點。</div>
-          </td>
-          <td><strong>清晨海浪</strong><br>第一道陽光照亮浪花與沙粒。</td>
-          <td>2025-09-03</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="footer">
-    小提示：圖片請使用相對路徑 <span class="code">images/檔名.png</span>；若要更換圖片，把新檔案放進 <span class="code">images</span> 資料夾並更新 <span class="code">src</span> 與 <span class="code">alt</span>。
-  </div>
-</body>
-</html>
-  </div>
-</body>
-</html>
 <!doctype html>
 <html lang="zh-Hant">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>空白頁面</title>
-  <!-- 可於此加入 CSS 或 script 連結 -->
-</head>
-<body>
-  <!-- 內容保持空白 -->
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>111415041 江婞安</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <!-- 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </head>
+  <body>
+     <!-- 導覽 -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+      <!-- BANNER -->
+       <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="5.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="6.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="7.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item active">
+      <img src="8.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+       <!-- 主要 -->
+        <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+     <!-- FOTTER -->
+    </body>
 </html>
