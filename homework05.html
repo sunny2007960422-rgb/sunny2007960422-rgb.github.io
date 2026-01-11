@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>相簿展示網站 - 課堂作業</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- 返回按鈕 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">← 返回作品集</a>
+      </div>
+    </nav>
+
+    <!-- 標題 -->
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">相簿展示網站</h1>
+          <p class="lead text-body-secondary">課堂作業 05 - 使用 Bootstrap 5 打造專業相簿展示頁面</p>
+          <p class="text-body-secondary">展示個人作品的美麗相簿，每件作品都有詳細的描述與高質感的呈現方式。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 相簿網格 -->
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="01.jpg" class="card-img-top" alt="自我映像 筆觸中的故事">
+              <div class="card-body">
+                <p class="card-text"><strong>自我映像 筆觸中的故事</strong><br>我的素描自畫像，旨在以復古風格捕捉自我於時光中的映像。</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">查看</button>
+                  </div>
+                  <small class="text-body-secondary">素描</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="02.jpg" class="card-img-top" alt="葉下的探索 回到那童年時光">
+              <div class="card-body">
+                <p class="card-text"><strong>葉下的探索 回到那童年時光</strong><br>大自然的奇妙與童真的探索，透過這幅作品表達內心的平靜。</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">查看</button>
+                  </div>
+                  <small class="text-body-secondary">自然</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="03.jpg" class="card-img-top" alt="星空夢語">
+              <div class="card-body">
+                <p class="card-text"><strong>星空夢語</strong><br>描繪一個坐在雲朵上的少女，象徵對夢想的守護與憧憬。</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">查看</button>
+                  </div>
+                  <small class="text-body-secondary">夢幻</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="04.jpg" class="card-img-top" alt="回家的路上">
+              <div class="card-body">
+                <p class="card-text"><strong>回家的路上</strong><br>日常生活中匆忙的通勤場景，表達現代社會中的疏離感。</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">查看</button>
+                  </div>
+                  <small class="text-body-secondary">日常</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="05.jpg" class="card-img-top" alt="在那悠閒的午後">
+              <div class="card-body">
+                <p class="card-text"><strong>在那悠閒的午後</strong><br>午後陽光灑在綠意盎然的街景中，營造寧靜祥和的氛圍。</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">查看</button>
+                  </div>
+                  <small class="text-body-secondary">風景</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="06.jpg" class="card-img-top" alt="綻放的靜謐">
+              <div class="card-body">
+                <p class="card-text"><strong>綻放的靜謐</strong><br>以花為主題，透過色彩與光影表現生命的柔和與力量。</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">查看</button>
+                  </div>
+                  <small class="text-body-secondary">花卉</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 頁腳 -->
+    <footer class="text-body-secondary py-5">
+      <div class="container">
+        <p class="text-center">© 2025 江婞安的課堂作業 - 相簿展示網站</p>
+      </div>
+    </footer>
+  </body>
+</html>

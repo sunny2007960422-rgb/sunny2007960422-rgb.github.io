@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>進階網站設計 - 課堂作業</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- 返回按鈕 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">← 返回作品集</a>
+      </div>
+    </nav>
+
+    <!-- 導覽 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">江婞安 - 進階網站設計</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#portfolio">作品集</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">關於</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BANNER - 輪播 -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="5.jpg" class="d-block w-100" alt="作品 5">
+        </div>
+        <div class="carousel-item">
+          <img src="6.jpg" class="d-block w-100" alt="作品 6">
+        </div>
+        <div class="carousel-item">
+          <img src="7.jpg" class="d-block w-100" alt="作品 7">
+        </div>
+        <div class="carousel-item">
+          <img src="8.jpg" class="d-block w-100" alt="作品 8">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- 主要內容 -->
+    <main id="portfolio">
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">進階網站設計</h1>
+            <p class="lead text-body-secondary">課堂作業 06 - 12/16 - 綜合應用前面所學的技術，打造一個完整的相簿展示網站</p>
+            <p>
+              <a href="#portfolio" class="btn btn-primary my-2">查看作品</a>
+              <a href="index.html" class="btn btn-secondary my-2">返回首頁</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相簿網格 -->
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="01.jpg" class="card-img-top" alt="自我映像 筆觸中的故事">
+                <div class="card-body">
+                  <p class="card-text"><strong>自我映像 筆觸中的故事</strong><br>素描自畫像，以復古風格捕捉自我映像。</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">查看</button>
+                    </div>
+                    <small class="text-body-secondary">素描</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="02.jpg" class="card-img-top" alt="葉下的探索 回到那童年時光">
+                <div class="card-body">
+                  <p class="card-text"><strong>葉下的探索</strong><br>大自然的奇妙與童真的探索。</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">查看</button>
+                    </div>
+                    <small class="text-body-secondary">自然</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="03.jpg" class="card-img-top" alt="星空夢語">
+                <div class="card-body">
+                  <p class="card-text"><strong>星空夢語</strong><br>坐在雲朵上的少女，象徵對夢想的守護。</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">查看</button>
+                    </div>
+                    <small class="text-body-secondary">夢幻</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="04.jpg" class="card-img-top" alt="回家的路上">
+                <div class="card-body">
+                  <p class="card-text"><strong>回家的路上</strong><br>日常生活中匆忙的通勤場景。</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">查看</button>
+                    </div>
+                    <small class="text-body-secondary">日常</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="05.jpg" class="card-img-top" alt="在那悠閒的午後">
+                <div class="card-body">
+                  <p class="card-text"><strong>在那悠閒的午後</strong><br>午後陽光灑落在綠意盎然的街景。</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">查看</button>
+                    </div>
+                    <small class="text-body-secondary">風景</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="06.jpg" class="card-img-top" alt="綻放的靜謐">
+                <div class="card-body">
+                  <p class="card-text"><strong>綻放的靜謐</strong><br>以花為主題，透過色彩與光影表現生命。</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">查看</button>
+                    </div>
+                    <small class="text-body-secondary">花卉</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 頁腳 -->
+    <footer class="text-body-secondary py-5">
+      <div class="container text-center">
+        <p>© 2025 江婞安的課堂作業 - 進階網站設計</p>
+        <p class="text-muted">課堂作業 12/16 - Bootstrap 相簿展示</p>
+      </div>
+    </footer>
+  </body>
+</html>
